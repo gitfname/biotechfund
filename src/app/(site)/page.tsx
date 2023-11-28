@@ -10,17 +10,21 @@ import Image from "next/image"
 function page() {
     return (
         <div>
-            <Hero />
+            <div className="max-lg:hidden">
+                <Hero />
+            </div>
 
-            <div className="bg-nav_bg w-full py-16 px-12">
+            <div className="bg-nav_bg w-full py-10 md:py-16 px-2 md:px-12">
 
-                <div className="w-full grid grid-cols-2 gap-6">
+                <div className="w-full grid md:grid-cols-2 gap-6">
                     <div>
-                        <h2
-                            className="text-lg text-slate-900 font-medium bg-white rounded-sm w-max"
-                        >
-                            صندوق حمایت از سرمایه‌گذاری زیست فناوری
-                        </h2>
+                        <div className="w-max bg-white">
+                            <h2
+                                className="text-lg text-slate-900 font-medium rounded-sm break-words"
+                            >
+                                صندوق حمایت از سرمایه‌گذاری زیست فناوری
+                            </h2>
+                        </div>
 
                         <p className="max-w-prose text-sm text-slate-800 mt-8 font-medium">
                             محتوا ویدیو شامل معرفی کامل صندوق حمایت از سرمایه‌گذاری زیست فناوری، خدمات، اولویت‌های صندوق جهت ارائه خدمات همچنین راهنمایی و شرح کامل فرایندهای درخواست استفاده از خدمات است.
@@ -48,7 +52,7 @@ function page() {
                     className="w-48 h-auto block mx-auto mt-3"
                 />
 
-                <div className="mt-8 w-full grid grid-cols-4 gap-6">
+                <div className="mt-8 w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <Card1
                         img="/image-1.jpg"
                         title="63824"
@@ -105,7 +109,7 @@ function page() {
                     با کلیک روی هر خدمت، می‌توانید جزئیات آن را مطالعه فرمایید.
                 </p>
 
-                <div className="mt-8 w-full grid grid-cols-3 gap-4">
+                <div className="mt-8 w-full grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                     <Card2
                         img="/image-7.jpg"
                         title="سرمایه گذاری جسورانه (VC)"
@@ -140,7 +144,7 @@ function page() {
 
             </div>
 
-            <div className="w-full py-16 px-12 bg-gray-100">
+            <div className="w-full py-10 md:py-16 px-2 md:px-12 bg-gray-100">
 
                 <h2
                     className="text-xl text-slate-900 font-medium text-center"
@@ -161,7 +165,7 @@ function page() {
                 </div>
             </div>
 
-            <div className="w-full py-16 px-12">
+            <div className="w-full py-10 md:py-16 px-2 md:px-12">
 
                 <h2
                     className="text-xl text-slate-900 font-medium text-center"

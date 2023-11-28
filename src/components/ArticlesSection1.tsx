@@ -8,7 +8,7 @@ import { ChevronsRight, ChevronsLeft } from "lucide-react"
 function ArticlesSection1() {
     return (
         <div>
-            <div className="w-full grid grid-cols-4 gap-4">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <ArticleCard1
                     date="1402/08/30 در ساعت 11:00:00"
                     description="نمایشگاه MEDICA آلمان در شهر دوسلدورف با بیش از 4500 غرفه‌دار از 66 کشور و بیش از 81000 بازدیدکننده"
@@ -42,7 +42,7 @@ function ArticlesSection1() {
                 />
             </div>
 
-            <Pagination.Root count={100} pageSize={10} siblingCount={2} className="flex items-center gap-x-4 mx-auto w-max mt-8">
+            <Pagination.Root count={100} pageSize={10} siblingCount={1} className="flex items-center gap-x-4 mx-auto w-max mt-8">
                 {({ pages }) => (
                     <>
                         <Pagination.PrevTrigger

@@ -8,13 +8,32 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 function OurCustomersSlider() {
 
     const [sliderRef, instanceRef] = useKeenSlider({
-        slides: {
-            perView: 6
+        breakpoints: {
+            "(max-width: 639px)": {
+                slides: {
+                    perView: 2.3
+                }
+            },
+            "(min-width: 640px) and (max-width: 768px)": {
+                slides: {
+                    perView: 3.3
+                }
+            },
+            "(min-width: 768px) and (max-width: 1024px)": {
+                slides: {
+                    perView: 5.3
+                }
+            },
+            "(min-width: 1024px)": {
+                slides: {
+                    perView: 6.2
+                }
+            }
         }
     })
 
     return (
-        <div className="flex items-center gap-x-2">
+        <div className="flex items-center gap-x-2 ">
 
             <button onClick={() => instanceRef.current?.next()} className="active:scale-95 translate-all duration-300 w-10 aspect-square rounded-full
             bg-transparent/10 grid place-items-center">

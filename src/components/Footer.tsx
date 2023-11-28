@@ -4,8 +4,8 @@ import Image from "next/image"
 
 function Footer() {
     return (
-        <footer className="w-full px-8 py-16 bg-[#353535]">
-            <div className="grid grid-cols-3 gap-6">
+        <footer className="w-full px-3 md:px-8 py-16 bg-[#353535]">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 gap-y-12">
 
                 <div className="grid grid-cols-2">
                     <div className="space-y-3.5">
@@ -44,19 +44,19 @@ function Footer() {
                         className="w-24 h-auto block mx-auto"
                     />
 
-                    <div className="p-3 border border-primary w-full mt-6">
+                    <div className="p-3 border border-primary mt-6 max-lg:max-w-xs mx-auto w-full">
                         <p className="text-white text-lg font-normal text-center -translate-y-7 bg-[#353535]">
                             صندوق حمایت از سرمایه<br />گذاری زیست فناوری
                         </p>
 
-                        <p className="text-sm text-white font-normal mt-3 text-center">
+                        <p className="text-sm text-white font-normal mt-3">
                             صندوق سرمایه‌گذاری زیست فناوری با حمایت ستاد توسعه زیست فناوری معاونت علمی و فناوری رئیس جمهور و مشارکت بخش غیردولتی، راه‌اندازی و شروع به فعالیت نموده است.
                         </p>
                     </div>
                 </div>
 
-                <div className="flex items-center gap-x-3">
-                    <div className="text-left">
+                <div className="flex items-center gap-x-3 max-lg:flex-row-reverse max-lg:justify-end">
+                    <div className="text-right md:text-left">
                         <div className="h-16 flex items-center">
                             <p className="text-sm text-white font-medium w-full">
                                 تهران خیابان ملاصدرا، خیابان شیرازی شمالی، خیابان صائب تبریزی شرقی، پلاک 6
