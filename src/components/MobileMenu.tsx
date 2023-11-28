@@ -107,6 +107,7 @@ function MobileMenu({ items }: Props) {
                             items={item.items}
                             title={item?.title}
                             href={item.href}
+                            key={item.id}
                         />
                     ))
                 }
